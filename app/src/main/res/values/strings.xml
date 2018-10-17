@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">鑫考教育</string>
+    <string name="back_btn">返回</string>
+    <string name="phone_hint">请输入手机号</string>
+    <string name="pwd_hint">请输入密码</string>
+    <string name="login_btn">登录</string>
+    <string name="enc_problem">遇到问题</string>
+    <string name="forget_pwd">忘记密码 </string>
+    <string name="tell">400-189-0086</string>
+<!--main-->
+    <string name="radio_btn1_text">首页</string>
+    <string name="radio_btn2_text">聊天</string>
+    <string name="radio_btn3_text">分享</string>
+    <string name="radio_btn4_text">我</string>
+    <!--title_bar-->
+    <string name="title">聊天</string>
+    <!-- item_chat_list -->
+    <string name="chat_date">年月日</string>
+    <string name="chat_address">王策</string>
+    <string name="chat_desc">我：谢谢老师</string>
+    <!--item_chat_detailed-->
+    <string name="receive_chat_msg">接收的消息</string>
+    <string name="send_chat_msg">发送的消息</string>
+
+</resources>

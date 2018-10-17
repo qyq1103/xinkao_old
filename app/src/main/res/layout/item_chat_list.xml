@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/u3948"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_chat_head_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/u3612" />
+
+        <TextView
+            android:id="@+id/tv_chat_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/chat_date"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_chat_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@id/tv_chat_date"
+            android:layout_toRightOf="@id/iv_chat_head_portrait"
+            android:singleLine="true"
+            android:text="@string/chat_address"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_chat_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_chat_address"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_chat_head_portrait"
+            android:singleLine="true"
+            android:text="@string/chat_desc"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>

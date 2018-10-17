@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/m_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/u5648"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            style="@style/tab_item_style"
+            android:drawableTop="@drawable/select_tab_1"
+            android:text="@string/radio_btn1_text"
+            android:textColor="@drawable/select_tab_text_color" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/tab_item_style"
+            android:drawableTop="@drawable/select_tab_2"
+            android:text="@string/radio_btn2_text"
+            android:textColor="@drawable/select_tab_text_color" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            style="@style/tab_item_style"
+            android:drawableTop="@drawable/select_tab_3"
+            android:text="@string/radio_btn3_text"
+            android:textColor="@drawable/select_tab_text_color" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            style="@style/tab_item_style"
+            android:drawableTop="@drawable/select_tab_4"
+            android:text="@string/radio_btn4_text"
+            android:textColor="@drawable/select_tab_text_color" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+</LinearLayout>
