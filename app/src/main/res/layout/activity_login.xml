@@ -36,7 +36,6 @@
             android:layout_toRightOf="@id/iv_phone"
             android:hint="@string/phone_hint"
             android:inputType="number"
-            android:text="15732892375"
             android:maxLength="11" />
 
         <ImageView
@@ -55,7 +54,6 @@
             android:layout_marginRight="10dp"
             android:layout_toRightOf="@id/iv_pwd"
             android:hint="@string/pwd_hint"
-            android:text="123456"
             android:inputType="textPassword"
             android:maxLength="16" />
     </RelativeLayout>

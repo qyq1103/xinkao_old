@@ -3,11 +3,8 @@ package com.xinkao.xinkao.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
 
+import com.hyphenate.easeui.ui.EaseChatFragment;
 import com.xinkao.xinkao.R;
 
 /**
@@ -17,20 +14,25 @@ import com.xinkao.xinkao.R;
  */
 public class ChatActivity extends AppCompatActivity {
 
-    private ListView mChat;
-    private EditText mEditChat;
-    private Button mSendChat;
+//    private ListView mChat;
+//    private EditText mEditChat;
+//    private Button mSendChat;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
         //隐藏控件
-        findViewById(R.id.add_chat).setVisibility(View.GONE);
-        mChat = findViewById(R.id.lv_chat);
-        mEditChat = findViewById(R.id.ed_chat);
-        mSendChat = findViewById(R.id.btn_send_chat);
+//        mChat = findViewById(R.id.lv_chat);
+//        mEditChat = findViewById(R.id.ed_chat);
+//        mSendChat = findViewById(R.id.btn_send_chat);
 
+        //EaseUI封装好的聊天界面
+        EaseChatFragment easeChatFragment = new EaseChatFragment();
+        //将参数传给聊天界面
+        easeChatFragment.setArguments(getIntent().getExtras());
+        //加载EaseUI封装的的聊天界面Fragment
+        getSupportFragmentManager().beginTransaction().add(R.id.ec_layout_container,easeChatFragment).commit();
     }
 
 }

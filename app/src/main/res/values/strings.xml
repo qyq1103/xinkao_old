@@ -21,5 +21,7 @@
     <!--item_chat_detailed-->
     <string name="receive_chat_msg">接收的消息</string>
     <string name="send_chat_msg">发送的消息</string>
+    <!--fragment_me-->
+    <string name="logout_btn">退出登录</string>
 
 </resources>

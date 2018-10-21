@@ -33,6 +33,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View homeView = inflater.inflate(R.layout.fragment_home, null);
         mListView = homeView.findViewById(R.id.lv_home);
+        //调用异步对象
         new pullApi().execute();
         return homeView;
     }
@@ -48,7 +49,9 @@ public class HomeFragment extends Fragment {
         @Override
         protected List<HomeBean> doInBackground(HomeBean... homeBeans) {
             List<HomeBean> homeBeanList;
+           //获取网络返回的数据
             String jsonString = HttpUtils.sendGetMethod(apiUrl);
+            //获取json解析的数据
             homeBeanList = JsonTools.parseList(jsonString);
             return homeBeanList;
         }

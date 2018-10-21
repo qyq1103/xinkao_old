@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.xinkao.xinkao.R;
-import com.xinkao.xinkao.fragment.ChatFragment;
+import com.xinkao.xinkao.fragment.ConversationList;
 import com.xinkao.xinkao.fragment.HomeFragment;
 import com.xinkao.xinkao.fragment.MeFragment;
 import com.xinkao.xinkao.fragment.ShareFragment;
@@ -61,7 +61,6 @@ public class MainActivity extends FragmentActivity {
     }
 
     /**
-     *
      * @param containerId
      * @param tag
      */
@@ -71,15 +70,17 @@ public class MainActivity extends FragmentActivity {
         if (destFragment == null) {
             if (tag.equals(tabs[0]))
                 destFragment = new HomeFragment();
-            if (tag.equals(tabs[1]))
-                destFragment = new ChatFragment();
+            if (tag.equals(tabs[1])) {
+                destFragment = new ConversationList();
+            }
             if (tag.equals(tabs[2]))
                 destFragment = new ShareFragment();
             if (tag.equals(tabs[3]))
                 destFragment = new MeFragment();
         }
         FragmentTransaction ft = fragmentManager.beginTransaction();
-        ft.replace(containerId,destFragment,tag);
+
+        ft.replace(containerId, destFragment, tag);
         ft.commit();
     }
 }
